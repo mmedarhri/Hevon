@@ -7,11 +7,11 @@ meteor-platform
 iron:router
 bootstrap
 sacha:spin
-mrt:accounts-ui-bootstrap-dropdown
 ibox:errors
 http
 mizzao:bootstrap-3
-accounts-password
-underscore
 multiply:iron-router-progress
+underscore
+accounts-password
+ian:accounts-ui-bootstrap-3
 
