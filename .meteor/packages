@@ -8,8 +8,10 @@ iron:router
 bootstrap
 sacha:spin
 mrt:accounts-ui-bootstrap-dropdown
-accounts-password
-mrt:iron-router-progress
 ibox:errors
 http
+mizzao:bootstrap-3
+accounts-password
+underscore
+multiply:iron-router-progress
 
