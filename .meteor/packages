@@ -14,4 +14,7 @@ multiply:iron-router-progress
 underscore
 accounts-password
 ian:accounts-ui-bootstrap-3
-
+currencies
+http
+standard-app-packages
+ian:accounts-ui-bootstrap-3
