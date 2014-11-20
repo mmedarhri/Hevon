@@ -11,21 +11,18 @@
       </div>
       <div class="collapse navbar-collapse" id="navigation">
         <ul class="nav navbar-nav">
-            <a class="navbar-brand" href="{{pathFor 'usersList'}}">Heavon</a>
-            <a class="navbar-brand" href="{{pathFor 'transacsList'}}">Transactions</a>
-            <a class="navbar-brand" href="{{pathFor 'configList'}}">Configuration</a>
           {{#if currentUser}}
-            <li class="{{activeRouteClass 'postTransfer'}}">
-              <!--<a href="{{pathFor 'postTransfer'}}">Transfer Currency</a>-->
-            </li>
-            <!--<li class="dropdown">
-              {{> notifications}}
-            </li>-->
+              <a class="navbar-brand" href="{{pathFor 'home'}}">Heavon</a>
+              <a class="navbar-brand" href="{{pathFor 'user'}}">Profile</a>
+              <a class="navbar-brand" href="{{pathFor 'transacsList'}}">Transactions</a>
+              <a class="navbar-brand" href="{{pathFor 'configList'}}">Configuration</a>
           {{/if}}
         </ul>
-        <ul class="nav navbar-nav navbar-right">
-          {{> loginButtons}}
-        </ul>
+          <div class="collapse navbar-collapse" id="navigation">
+              <ul class="nav navbar-nav navbar-right">
+                {{> loginButtons}}
+              </ul>
+          </div>
       </div>
     </div>
   </nav>

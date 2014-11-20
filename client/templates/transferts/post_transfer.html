@@ -1,0 +1,28 @@
+<template name="postTransfer">
+  <form class="main form">
+    <div class="form-group {{errorClass 'amount_sent'}}">
+      <!--<label class="control-label" for="url">URL</label>-->
+      <div class="controls">
+          <form role="form" class="form-inline">
+          <!--<input name="amount_sent" id="amount_sent" type="text" value="" placeholder="YOU SEND" class="form-control"/>-->
+          <!--TO DO ADD DROP DOWN CURRENCY-->
+          <span class="help-block">{{errorMessage 'amount_sent'}}</span>
+
+           <!--   <div id="main" class="row-fluid">
+                  {{> usersList}}
+              </div>-->
+
+          </form>
+      </div>
+    </div>
+<!--    <div class="form-group {{errorClass 'amount_received'}}">
+      &lt;!&ndash;<label class="control-label" for="title">Title</label>&ndash;&gt;
+      <div class="controls">
+          <input name="amount_received" id="amount_received" type="text" value="" placeholder="RECEIVE" class="form-control"/>
+          <span class="help-block">{{errorMessage 'amount_received'}}</span>
+          &lt;!&ndash;TO DO ADD DROP DOWN CURRENCY&ndash;&gt;
+      </div>
+    </div>-->
+    <input type="submit" value="GET STARTED" class="btn btn-primary"/>
+  </form>
+</template>
