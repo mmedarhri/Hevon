@@ -1,3 +1,71 @@
-<template name="user_update">
-    {{> quickForm collection="simo_users" doc=this id="userId" type="update"}}
+<template name="updateUser">
+    {{> quickForm collection="simo_users" user=this id="updateUser" type="update"}}
 </template>
+<!--
+<template name="userEdit">
+    {{#with user}}
+        <form>
+            <div>
+                <label>Name :</label>
+                <input id="title" type="text" value="{{name}}" />
+            </div>
+            <div>
+                <label>Mail :</label>
+                <input id="url" type="text" value="{{mail}}" />
+            </div>
+            <div>
+                <label>Adresse :</label>
+                <textarea id="body" value="" class="input-xlarge">{{address}}</textarea>
+            </div>
+
+            <div>
+                <label>Bank :</label>
+                <input id="url" type="text" value="{{bank}}" />
+            </div>
+            <div>
+                <label>IBAN :</label>
+                <input id="url" type="text" value="{{IBAN}}" />
+            </div>
+            <div>
+            <TH ROWSPAN=6>
+                CCY :
+            </TH>
+            <tr>
+                <td>
+                    Euro :  {{ccyEuros}}
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    USD :  {{ccyUSD}}
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    GBP :  {{ccyGBP}}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    CZK :  {{ccyCZK}}
+                </td>
+            </tr>
+            </div>
+            &lt;!&ndash;<div>
+                <label>CCY</label>
+                {{#each ccy}}
+                    <label class="checkbox inline">
+                        <input id="category_{{_id}}" type="checkbox" value="{{_id}}" name="category" {{hasCategory}} /> {{name}}
+                    </label>
+                {{/each}}
+            </div>&ndash;&gt;
+
+            <div class="form-actions">
+                &lt;!&ndash;<a class="delete-link" href="/posts/deleted">Delete Post</a>&ndash;&gt;
+                <input type="submit" value="Submit" />
+            </div>
+        </form>
+    {{/with}}
+</template>-->

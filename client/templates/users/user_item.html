@@ -1,11 +1,95 @@
 <template name="userItem">
-  <div class="simo_users">
-    <div class="simo_user-content">
-        <span class="text"><strong>{{name}}</strong> </span> <br/>
-        <label> {{mail}}</label><br/>
-        <label> {{address}}</label><br/>
-        <label> {{bank}}</label><br/>
-        <label> {{iban}}</label><br/>
+    <form>
+    <div class="simo_users">
+        <div class="simo_user-content">
+            <tr>
+                <td>
+                    Name :
+                </td>
+                <td>
+                    {{name}}<br/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Mail :
+                </td>
+                <td>
+                    {{mail}}<br/>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Mail :
+                </td>
+                <td>
+                    {{mail}}<br/>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>
+                    Adresse :
+                </td>
+                <td>
+                    {{address}}<br/>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>
+                    Bank :
+                </td>
+                <td>
+                    {{bank}}<br/>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>
+                    IBAN :
+                </td>
+                <td>
+                    {{IBAN}}<br/>
+                </td>
+            </tr>
+
+            <div>
+                <TH ROWSPAN=6>
+                    CCY :
+                </TH>
+                <tr>
+                    <td>
+                        Euro :  {{ccyEuros}}
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        USD :  {{ccyUSD}}
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        GBP :  {{ccyGBP}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        CZK :  {{ccyCZK}}
+                    </td>
+                </tr>
+            </div>
     </div>
-      </div>
+    </div>
+        <div class="form-actions">
+            <a class="edit-link" href="/user/user_edit">EDIT</a>
+            <input type="submit" value="Submit" />
+        </div>
+    </form>
 </template>

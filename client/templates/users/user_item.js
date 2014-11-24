@@ -1,17 +1,38 @@
 Template.userItem.helpers({
   name: function() {
-    return _.extend({}, simo_users.findOne({"username": Meteor.user().username}), this).username;
-      }
-/*
+    return simo_users.findOne({"username": "Mohamed"}).profile.name;
+  },
+
+
+  mail: function() {
+    return simo_users.findOne({"username": "Mohamed"}).emails[0].address;
+  },
+
   address: function() {
-    return _.extend({}, simo_users.findOne({"username": Meteor.user().username}), this).address;
+    return simo_users.findOne({"username": "Mohamed"}).profile.address;
+  },
+
+  IBAN: function() {
+    return simo_users.findOne({"username": "Mohamed"}).profile.IBAN;
   },
 
   bank: function() {
-    return _.extend({}, simo_users.findOne({"username": Meteor.user().username}), this).bank;
+    return simo_users.findOne({"username": "Mohamed"}).profile.bank;
   },
 
-  iban: function() {
-    return _.extend({}, simo_users.findOne({"username": Meteor.user().username}), this).iban;
-  }*/
+  ccyEuros: function() {
+    return simo_users.findOne({"username": "Mohamed"}).profile.ccy.eur;
+  },
+
+  ccyUSD: function() {
+    return simo_users.findOne({"username": "Mohamed"}).profile.ccy.usd;
+  },
+
+  ccyGBP: function() {
+    return simo_users.findOne({"username": "Mohamed"}).profile.ccy.gbp;
+  },
+
+  ccyCZK: function() {
+    return simo_users.findOne({"username": "Mohamed"}).profile.ccy.czk;
+  }
 });
