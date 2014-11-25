@@ -1,7 +1,41 @@
 <template name="transacItem">
     <div class="simo_transacs">
         <div class="simo_transacs-content">
-            <label> ID user : {{id_user}}</label>
+            <table id="simo_transacs-content" class="display" cellspacing="10" width="100%">
+                <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Amount</th>
+                    <th>Currency From</th>
+                    <th>Currency To</th>
+                    <th>Date</th>
+                    <th>Status</th>
+                </tr>
+                </thead>
+<!--
+                <tfoot>
+                <tr>
+                    <th>ID</th>
+                    <th>Amount</th>
+                    <th>Currency From</th>
+                    <th>Currency To</th>
+                    <th>Date</th>
+                    <th>Status</th>
+                </tr>
+                </tfoot>-->
+
+                <tbody>
+                <tr>
+                    <td>{{_id}}</td>
+                    <td>{{amount_from}}</td>
+                    <td>{{ccy_from}}</td>
+                    <td>{{ccy_to}}</td>
+                    <td> {{date_creation}}</td>
+                    <td>{{status}}</td>
+                </tr>
+                </tbody>
+            </table>
+            </div>
         </div>
-    </div>
 </template>
+

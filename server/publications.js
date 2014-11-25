@@ -3,6 +3,10 @@ Meteor.publish('simo_users', function() {
 });
 
 
+Meteor.publish('currencies', function() {
+  return Currencies.find({});
+});
+
 Meteor.publish('simo_transacs', function() {
   return simo_transacs.find();
 });
